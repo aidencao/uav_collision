@@ -47,7 +47,7 @@ void octomapCallback(const octomap_msgs::Octomap::ConstPtr &msg)
     bool ans = isCollisionFunction();
 
     if(ans){
-        ROS_ERROR("发生碰撞警告");
+        ROS_ERROR("collision happen!");
     }
 }
 
@@ -74,4 +74,8 @@ int main(int argc, char **argv)
 
     //关注主题
     ros::Subscriber octree_sub = n.subscribe<octomap_msgs::Octomap>(sub_topic, 1, octomapCallback);
+
+    ros::spin();
+
+    return 0;
 }

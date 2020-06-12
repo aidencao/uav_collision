@@ -1,0 +1,11 @@
+<launch>
+  <node pkg="collision_detection" type="collision_detection_node" name="collision_detection">
+    <param name="uavl" value="0.5" />
+    <param name="uavw" value="0.5" />
+    <param name="uavh" value="0.5" />
+
+    <param name="sub_topic" type="string" value="/octomap_full" />
+    <param name="pub_topic" type="string" value="/is_collision" />
+ 
+  </node>
+</launch>

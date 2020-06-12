@@ -2,7 +2,7 @@
   <node pkg="trans_pointcloud" type="trans_pointcloud" name="trans_pointcloud">
 
     <!-- resolution in meters per pixel -->
-    <param name="octo_resolution" value="0.5" />
+    <param name="octo_resolution" value="0.05" />
 
     <!-- name of the fixed frame, needs to be "/map" for SLAM -->
     <param name="frame_id" type="string" value="/rslidar" />
